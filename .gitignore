@@ -5,3 +5,4 @@ node_modules/
 *.metadata.json
 *.ngsummary.json
 .DS_Store
+.idea
