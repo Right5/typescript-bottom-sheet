@@ -1,9 +1,9 @@
 {
-  "name": "swipe-bottom-sheet",
+  "name": "ngx-swipe-bottom-sheet",
   "version": "0.2.14",
   "devDependencies": {
     "@angular/cdk": "^12.1.4",
-    "@angular/cli": "^12.1.4",
+    "@angular/cli": "^13.3.9",
     "@angular/common": "~12.1.4",
     "@angular/compiler": "^12.1.4",
     "@angular/compiler-cli": "^12.1.4",
@@ -15,7 +15,7 @@
     "typescript": "^4.3.5",
     "zone.js": "^0.11.4"
   },
-  "description": "[Demo](https://joeflateau.github.io/typescript-bottom-sheet/)",
+  "description": "",
   "main": "sheet.js",
   "scripts": {
     "deploy-demo": "(cd ./angular-demo; npm run ngh)",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/joeflateau/typescript-bottom-sheet.git"
+    "url": "https://github.com/Right5/typescript-bottom-sheet.git"
   },
   "files": [
     "{angular,lib}/*.{d.ts,js,map,metadata.json}",
