@@ -305,8 +305,8 @@ const transitionEndEvent: string = (() => {
     elem = document.createElement("div");
 
   for (var t in transitions) {
-    if (typeof elem.style[t] !== "undefined") {
-      return transitions[t];
+    if (typeof (elem.style as any)[t] !== "undefined") {
+      return (transitions as any)[t];
     }
   }
 })();
