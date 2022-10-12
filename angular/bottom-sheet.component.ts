@@ -32,7 +32,7 @@ export class SheetDismissDirective {
     <div class="sheet" #sheet>
       <div class="sheet-header">
         <div class="home-indicator"><div class="line"></div></div>
-        <div class="iconWrap"><div class="icon"></div></div>
+        <div class="iconWrap"><div class="icon" (click)="close(true)"></div></div>
         <div class="sheet-title" *ngIf="title">{{ title }}</div>
       </div>
       <div
