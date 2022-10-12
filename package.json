@@ -15,7 +15,7 @@
     "typescript": "~4.5.5",
     "zone.js": "^0.11.4"
   },
-  "description": "",
+  "description": "Fork of https://github.com/joeflateau/typescript-bottom-sheet created by Joe Flateau",
   "main": "sheet.js",
   "scripts": {
     "deploy-demo": "(cd ./angular-demo; npm run ngh)",
@@ -33,9 +33,5 @@
     "*.{d.ts,js,scss}"
   ],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joeflateau/typescript-bottom-sheet/issues"
-  },
-  "homepage": "https://github.com/joeflateau/typescript-bottom-sheet#readme"
+  "license": "ISC"
 }
