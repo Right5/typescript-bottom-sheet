@@ -30,7 +30,11 @@ export class SheetDismissDirective {
   selector: "bottom-sheet",
   template: `
     <div class="sheet" #sheet>
-      <div class="sheet-title" *ngIf="title">{{ title }}</div>
+      <div class="sheet-header">
+        <div class="home-indicator"><div class="line"></div></div>
+        <div class="iconWrap"><div class="icon"></div></div>
+        <div class="sheet-title" *ngIf="title">{{ title }}</div>
+      </div>
       <div
         class="sheet-content"
         [style.height]="height"
