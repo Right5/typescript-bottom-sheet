@@ -13,7 +13,7 @@
     "lib": ["dom", "ESNext"],
     "strict": true
   },
-  "exclude": ["node_modules", "angular-demo"],
+  "exclude": ["node_modules", "angular-demo", "demo-app"],
   "angularCompilerOptions": {
     "strictMetadataEmit": true,
     "annotationsAs": "decorators"
