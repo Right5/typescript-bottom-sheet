@@ -1,6 +1,6 @@
 import { ComponentPortal, TemplatePortal } from "@angular/cdk/portal";
 import {
-  ComponentFactoryResolver,
+  ComponentFactoryResolver, ComponentRef,
   Injectable,
   Injector,
   TemplateRef,
@@ -47,6 +47,23 @@ export class BottomSheetProvider {
         sheetWrapperInstanceRef.destroy();
       };
     });
+  }
+
+  showRef<TProps>(
+      templateRef: BottomSheetContent<TProps>,
+      options: BottomSheetOptions<TProps>
+  ): ComponentRef<BottomSheetComponent<unknown>> {
+    const sheetWrapperInstanceRef = this.create<TProps>(templateRef, options);
+
+    sheetWrapperInstanceRef.instance.onInit = () => {
+      sheetWrapperInstanceRef.instance.open();
+    };
+
+    sheetWrapperInstanceRef.instance.onClose = (value) => {
+      sheetWrapperInstanceRef.destroy();
+    };
+
+    return sheetWrapperInstanceRef;
   }
 
   create<TProps>(
