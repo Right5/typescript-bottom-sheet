@@ -29,7 +29,9 @@ export class SheetDismissDirective {
 @Component({
   selector: "bottom-sheet",
   template: `
-    <div class="sheet" #sheet>
+    <div class="sheet" #sheet 
+         [style.height]="height"
+         [style.maxHeight]="maxHeight">
       <div class="sheet-header">
         <div class="home-indicator"><div class="line"></div></div>
         <div class="iconWrap"><div class="icon" (click)="close(true)"></div></div>
@@ -37,8 +39,6 @@ export class SheetDismissDirective {
       </div>
       <div
         class="sheet-content"
-        [style.height]="height"
-        [style.maxHeight]="maxHeight"
       >
         <ng-template
           [cdkPortalOutlet]="contentPortal"
