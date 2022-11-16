@@ -21,6 +21,7 @@ export interface BottomSheetOptions<TProps> {
   stops: number[];
   vcRef?: ViewContainerRef;
   props?: Partial<TProps>;
+  customClass?: string;
 }
 
 @Injectable()
@@ -75,6 +76,7 @@ export class BottomSheetProvider {
       stops,
       vcRef = this.rootVcRef,
       props,
+      customClass
     }: BottomSheetOptions<TProps>
   ) {
     if (vcRef == null) {
@@ -120,6 +122,7 @@ export class BottomSheetProvider {
       typeof maxHeight === "number" ? `${maxHeight}px` : maxHeight;
     sheetWrapperInstance.stops = stops;
     sheetWrapperInstance.contentPortal = sheetContent;
+    sheetWrapperInstance.customClass = customClass;
 
     return sheetWrapperInstanceRef;
   }

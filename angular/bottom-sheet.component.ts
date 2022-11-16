@@ -29,8 +29,8 @@ export class SheetDismissDirective {
 @Component({
   selector: "bottom-sheet",
   template: `
-    <div class="sheet" #sheet 
-         [style.height]="height"
+    <div class="sheet {{customClass}}" #sheet
+         [style.height]=""
          [style.maxHeight]="maxHeight">
       <div class="sheet-header">
         <div class="home-indicator"><div class="line"></div></div>
@@ -62,6 +62,8 @@ export class BottomSheetComponent<TProps> implements AfterViewInit, OnDestroy {
   height?: string;
 
   maxHeight?: string;
+
+  customClass?: string;
 
   stops: number[] = [];
 
