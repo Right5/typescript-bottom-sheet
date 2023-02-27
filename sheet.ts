@@ -233,6 +233,7 @@ export class SwipeAwaySheet {
     this.container.style.pointerEvents = "";
     document.body.style.overflowY = 'hidden';
     document.body.style.overflowX = 'hidden';
+    document.documentElement.style.overflow = 'hidden'
     this.sheetContent.scrollTo(0, 0);
     const stops = [
       Math.min(this.sheet.clientHeight, window.innerHeight),
@@ -289,6 +290,7 @@ export class SwipeAwaySheet {
       this.container.style.display = "none";
       document.body.style.overflowY = '';
       document.body.style.overflowX = '';
+      document.documentElement.style.overflow = ''
     });
   }
 
