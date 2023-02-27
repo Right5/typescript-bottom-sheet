@@ -1,6 +1,6 @@
 {
   "name": "ngx-swipe-bottom-sheet",
-  "version": "0.5.0",
+  "version": "0.5.7",
   "devDependencies": {
     "@angular/cdk": "^13.3.9",
     "@angular/cli": "^13.3.9",

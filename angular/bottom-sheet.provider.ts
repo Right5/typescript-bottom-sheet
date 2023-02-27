@@ -71,7 +71,7 @@ export class BottomSheetProvider {
     templateRef: BottomSheetContent<TProps>,
     {
       height,
-      maxHeight = `calc(100vh - env(safe-area-inset-top))`,
+      maxHeight = ``,
       title,
       stops,
       vcRef = this.rootVcRef,
